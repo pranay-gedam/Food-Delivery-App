@@ -37,7 +37,7 @@ const LoginPopup = ({setShowLogin}) => {
         localStorage.setItem("token",response.data.token);
         setShowLogin(false);
       } else {
-        alert(response.data.message)
+        alert(response.data.message);
       }
     }
 
