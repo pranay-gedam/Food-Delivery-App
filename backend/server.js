@@ -13,7 +13,10 @@ const port = process.env.PORT || 4000
 
 // middleware
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: 'https://68735dd9f649041ea6d0dfc3--glittering-dieffenbachia-c11d11.netlify.app',
+  credentials: true
+}));
 
 // db connection
 connectDB();
