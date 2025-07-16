@@ -12,7 +12,6 @@ const StoreContextProvider = (props) => {
   const [food_list, setFoodList] = useState([]);
 
   const addToCart = async (itemId) => {
-    console.log("ENV BASE_URL:", import.meta.env.VITE_API_BASE_URL);
     if (!cartItems[itemId]) {
       setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
     } else {
