@@ -16,7 +16,7 @@ const Header = () => {
         <button>View Menu</button>
       </div>
     </div>
-  );
+  )
 };
 
 export default Header
