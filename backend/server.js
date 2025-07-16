@@ -13,13 +13,21 @@ const port = process.env.PORT || 4000
 
 // middleware
 app.use(cors({
-  origin: [
-    "https://glittering-dieffenbachia-c11d11.netlify.app",
-    /\.netlify\.app$/   // wildcard for deploy previews (optional)
-  ],
+  origin: function (origin, callback) {
+    const allowedOrigins = [
+      "https://glittering-dieffenbachia-c11d11.netlify.app",
+      "https://food-admin-dashboard.netlify.app"
+    ];
+    if (!origin || allowedOrigins.includes(origin) || origin.endsWith(".netlify.app")) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
+
 
 
 // db connection
