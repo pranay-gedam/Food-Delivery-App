@@ -40,13 +40,20 @@
     margin-top: 30px;
 }
 
-@media (max-width:900px){
-    .place-order{
-        grid-template-columns: 1fr 2fr 1fr;
-        row-gap: 5px;
-        font-size: 12px;
-    }
-    .place-order .place-order-left p {
-        font-size: 10px;
-    }
+@media (max-width: 768px) {
+  .place-order {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .place-order-left,
+  .place-order-right {
+    max-width: 100%;
+  }
+
+  .place-order-left .multi-fields {
+    flex-direction: column;
+    gap: 15px;
+  }
 }
