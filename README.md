@@ -1,64 +1,53 @@
 # 🍔 Full Stack Food Ordering App
 
-A complete food ordering website and app built using **React.js**, **MongoDB**, **Express**, **Node.js**, and **Stripe** for secure online payments.
+A complete food ordering platform with a customer-facing frontend, an admin dashboard, and a backend API. Built using the MERN stack and deployed on Netlify (frontend) and Render (backend).
 
-## 🚀 Features
+## 🔗 Live Demo
 
-- 🔐 **User Authentication** – Users can register, log in, and manage their accounts
-- 🛒 **Shopping Cart** – Add food items to the cart and place orders
-- 💳 **Online Payment Integration** – Stripe payment gateway for secure transactions
-- 📦 **Order Management** – Track order status in real-time
-- 🧑‍💻 **Admin Panel** – Manage menu, orders, and users from a dedicated admin dashboard
+Frontend: [https://glittering-dieffenbachia-c11d11.netlify.app]
+Backend: [https://food-backend-ktvx.onrender.com] 
+Admin Panel: [https://admin-food-delivery.netlify.app]
 
-## 🛠️ Tech Stack
+## ✨ Features
 
-| Layer       | Tech                         |
-|-------------|------------------------------|
-| Frontend    | React.js                     |
-| Backend     | Node.js, Express.js          |
-| Database    | MongoDB                      |
-| Payments    | Stripe API                   |
-| Auth        | JWT, bcrypt                  |
+- 🔐 User authentication (JWT-based)
+- 🛍️ Browse food items by category
+- ➕ Add/remove items to cart
+- 💳 Integrated Stripe payment gateway
+- 🧾 Order history & real-time cart updates
+- 🧑‍💼 Admin dashboard to manage:
+  - Menu items
+  - Orders
+  - Users
 
-## 📂 Project Structure
+## ⚙️ Tech Stack
 
-Food-Delivery-App/
-├── frontend/ # React frontend
-├── backend/ # Express API server
-├── admin-panel/ # Admin dashboard
-├── .gitignore
-├── README.md
-└── package.json
+- **Frontend:** React, Vite, Tailwind CSS
+- **Backend:** Node.js, Express.js, MongoDB
+- **Database:** MongoDB Atlas
+- **Payment:** Stripe API
+- **Deployment:** Netlify (Frontend & Admin), Render (Backend)
 
-## 🔧 Setup Instructions
+## 📁 Folder Structure
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/pranay-gedam/Food-Delivery-App.git
-   cd Food-Delivery-App
+food-del/
+│
+├── frontend/ # User-facing app
+├── backend/ # Node.js/Express API
+├── admin/ # Admin dashboard
+└── README.md
 
-2. Install dependencies:
+## 🚀 Getting Started Locally
 
-    Frontend:
+1. Clone the repo
+2. Run `npm install` in all three folders (`frontend`, `backend`, `admin`)
+3. Set up environment variables as per `.env.example`
+4. Run development servers:
+   - Frontend: `npm run dev`
+   - Backend: `npm start server`
+   - Admin: `npm run dev`
 
-        bash
-        Copy
-        Edit
-        cd frontend
-        npm install
-        npm start
+## 🗂️ Environment Variables
 
-    Backend:
-
-        bash
-        Copy
-        Edit
-        cd backend
-        npm install
-        npm run dev
-
-3. Configure environment variables:
-
-    - Create .env files in both frontend and backend
-
-    - Add your MongoDB URI, JWT Secret, Stripe keys, etc.
+```env
+VITE_API_BASE_URL=https://your-backend.onrender.com
