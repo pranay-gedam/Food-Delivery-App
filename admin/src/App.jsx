@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css'
 
 const App = () => {
 
-  const url = "https://food-backend-ktvx.onrender.com"
+  const url = import.meta.env.VITE_API_BASE_URL;
 
   return (
     <div>
