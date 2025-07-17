@@ -54,6 +54,11 @@
 
   .place-order-left .multi-fields {
     flex-direction: column;
-    gap: 15px;
+    gap: 0; 
+  }
+
+  .place-order-left .multi-fields input:not(:last-child) {
+    margin-bottom: 15px;
   }
 }
+
