@@ -24,6 +24,10 @@
     gap: 20px;
 }
 
+.footer-social-icons{
+    cursor: pointer;
+}
+
 .footer-content-left li, .footer-content-center li, .footer-content-right li{
     list-style: none;
     margin-bottom: 10px;
