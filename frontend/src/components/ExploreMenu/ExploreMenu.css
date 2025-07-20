@@ -22,6 +22,7 @@
     text-align: center;
     margin: 20px 0px;
     overflow-x: scroll;
+
 }
 
 .explore-menu-list::-webkit-scrollbar{
@@ -33,7 +34,12 @@
     min-width: 80px;
     cursor: pointer;
     border-radius: 50%;
-    transition: 0.2s;
+    /* transition: 0.2s; */
+    transition: 0.5s;
+}
+
+.explore-menu-list-item img:hover{
+    transform: scale(1.05);
 }
 
 .explore-menu-list-item p{
@@ -41,6 +47,12 @@
     color: #747474;
     font-size: max(1.2vw, 16px);
     cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.explore-menu-list-item p:hover{
+    transform: scale(1.05);
 }
 
 .explore-menu hr{
