@@ -47,12 +47,6 @@
     color: #747474;
     font-size: max(1.2vw, 16px);
     cursor: pointer;
-    transition: 0.5s;
-
-}
-
-.explore-menu-list-item p:hover{
-    transform: scale(1.05);
 }
 
 .explore-menu hr{
