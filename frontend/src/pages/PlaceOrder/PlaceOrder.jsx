@@ -80,7 +80,7 @@ const PlaceOrder = () => {
           <input required name="zipcode" onChange={onChangeHandler} value={data.zipcode} type="text" placeholder="Zip code" pattern="\d+" title="Please enter digits only" />
           <input required name="country" onChange={onChangeHandler} value={data.country} type="text" placeholder="Country" />
         </div>
-        <input required name="phone" onChange={onChangeHandler} value={data.phone} type="text" pattern="\d" placeholder="Phone" title="Please enter digits only" />
+        <input required name="phone" onChange={onChangeHandler} value={data.phone} type="tel" pattern="\d+" maxLength={15} placeholder="Phone" title="Please enter digits only" />
       </div>
       <div className="place-order-right">
         <div className="cart-total">
