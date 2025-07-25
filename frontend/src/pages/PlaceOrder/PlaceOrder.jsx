@@ -58,7 +58,7 @@ const PlaceOrder = () => {
       navigate('/cart');
     }
     else if(getTotalCartAmount()===0){
-      navigate('/cart')
+      navigate('/cart');
     }
   },[token])
 
